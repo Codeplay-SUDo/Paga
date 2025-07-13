@@ -243,7 +243,7 @@ nav .right-nav {
 
 /* why paga section starts */
 .why-paga-container {
-    height: 550px;
+    height: 450px;
 }
 
 /* why paga text styles */
@@ -559,3 +559,75 @@ nav .right-nav {
 .swiper-wrapper {
     
 }
+/* reviewers section end */
+
+/* partners start */
+
+/* partners h2 / span */
+.partners h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    color: #1E1F38;
+    width: 705px;
+}
+
+.partners h2 span {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    color: #F16725;
+}
+
+.partners > .partners-heading {
+    padding-left: 85px;
+}
+/* partners end */
+
+/* download paga starts */
+.app-download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F16725;
+    border-radius: 35px;
+    width: 1120px;
+    margin: 0 auto;
+
+}
+
+.download-app-left p {
+    background-color: #FDB913;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    align-content: center;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.download-app-left h2 {
+    width: 556px;
+    height: 150px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.download-app-left h2 span {
+    color: #1E1F38;
+}
+
+.download-app-left > .download-link {
+    display: flex;
+    gap: 40px;
+}
+
+
+
