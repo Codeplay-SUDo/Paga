@@ -23,13 +23,13 @@ header nav{
 }
 
 /* ul styles */
-ul {
+nav ul {
     display: flex;
     gap: 40px;
 }
 
 /* list items styles */
-ul li a {
+nav ul li a {
     font-family: "Poppins", sans-serif ;
     font-weight: 500;
     font-size: 16px;
@@ -556,9 +556,6 @@ nav .right-nav {
   box-sizing: border-box;
 }
 
-.swiper-wrapper {
-    
-}
 /* reviewers section end */
 
 /* partners start */
@@ -587,6 +584,10 @@ nav .right-nav {
 /* partners end */
 
 /* download paga starts */
+.download-app-section {
+    height: 450px;
+}
+
 .app-download-container {
     display: flex;
     justify-content: center;
@@ -630,4 +631,88 @@ nav .right-nav {
 }
 
 
+/* footer styles starts */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 50px 0px 50px;
+}
 
+.footer-container > .footer-sm-links {
+    width: 278px;
+    height: 225px;
+}
+
+.footer-container > .footer-sm-links > .end-logo {
+    padding-bottom: 10px;
+}
+
+
+.footer-container p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E1F38CC;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+
+.footer-items h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F16725;
+}
+
+.footer-items ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E1F38CC;
+}
+
+.footer-items ul li a:hover {
+    color: #F16725;
+}
+
+.footer-items > .reach {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.footer-items > .reach a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E1F38CC;
+}
+
+.footer-items > .reach a:hover {
+    color: #1e23b3;
+}
+
+.footer-items > .reach i {
+    color: #F16729;
+}
+
+
+.footer-items > .reach address {
+    width: 223px;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 180px;
+    padding-left: 80px;
+}
+
+footer {
+    background-color: #FFFFE3;
+}
