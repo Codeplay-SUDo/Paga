@@ -74,6 +74,7 @@ nav .right-nav {
     height: 650px;
     padding: 20px 70px 20px 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #ffffe3;
 } 
@@ -145,22 +146,14 @@ nav .right-nav {
 }
 
 /* right-hero styles */
-.right-hero {
-    width: 400px;
-    height: 400px;
-    background-color: #F16725;
-    border-radius: 50%;
-    align-self: center;
-    margin: auto;
-    position: relative;
-    top: 90px;
-    left: 20px;
-}
 
 .right-hero img {
+    width: 100%;
     position: relative;
-    top: -80px;
-    right: 120px;
+    /* bottom: 100px; */
+    /* right: 70px; */
+
+   
 }
 /* hero section end */
 
@@ -505,6 +498,7 @@ nav .right-nav {
 
 /* testimonies / swiper container */
 .testimonial-section {
+  width: 100%;
   text-align: center;
   padding: 40px;
 }
@@ -514,7 +508,13 @@ nav .right-nav {
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
-  line-height: 24px;
+  line-height: 60px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .swiper-slide h3 {
@@ -550,9 +550,9 @@ nav .right-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
+  width: 254px;
   margin: 0 auto;
-  padding: 40px;
+  /* padding: 40px; */
   box-sizing: border-box;
 }
 
@@ -578,6 +578,10 @@ nav .right-nav {
     color: #F16725;
 }
 
+.partner-grid img {
+    width: 100%;
+}
+
 .partners > .partners-heading {
     padding-left: 85px;
 }
@@ -585,7 +589,7 @@ nav .right-nav {
 
 /* download paga starts */
 .download-app-section {
-    height: 450px;
+    height: 350px;
 }
 
 .app-download-container {
@@ -635,7 +639,7 @@ nav .right-nav {
 .footer-container {
     display: flex;
     justify-content: space-around;
-    padding: 120px 50px 0px 50px;
+    padding: 50px 50px 0px 50px;
 }
 
 .footer-container > .footer-sm-links {
@@ -706,11 +710,10 @@ nav .right-nav {
 }
 
 .end-footer {
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 180px;
-    padding-left: 80px;
+    padding: 20px 180px 0px 80px;
 }
 
 footer {
