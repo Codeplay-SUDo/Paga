@@ -22,5 +22,6 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#3ba576",
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/index.html",
+    "liveServer.settings.port": 5501
 }
