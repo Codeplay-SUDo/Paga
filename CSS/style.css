@@ -6,52 +6,41 @@
     list-style-type: none;
     box-sizing: border-box;
     /* background-color: #FFFFE3; */
-}   
+}  
+
+/* variable color */
+:root {
+    --primary-color:  #F16725;
+    --primary-bg-color: #FFFFE3;
+    --secondary-color: #fdb9fd;
+    --secondary-bg-color: #1E1F38;
+    --text-color: #1E1F38; 
+    --text-secondary-color: #1E1F38CC;
+}
+
+/* custom button */
+.primary-button {
+    width: 136px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: none;
+    gap: 2rem;
+}
 
 
 /* header styles */
 header nav {
     width: 100%;
-    padding: 20px 70px 20px 70px;
+    padding: 2% 7% 2% 7%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFE3;
+    background-color: var(--primary-bg-color);
     z-index: 900;
     
 }
-
-/* styling the hamburger menu */
-.hamburger {
-    display: none;
-    background: transparent;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-.hamburger .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #F16725;
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-
 
 /* ul styles */
 nav ul {
@@ -69,7 +58,7 @@ nav ul li a {
 }  
 
 /* right-nav styles */
-nav .right-nav {
+.right-nav {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -101,14 +90,38 @@ nav .right-nav {
     color: #ffffff;
 }
 
+/* hamburger styles */
+.hamburger {
+    display: none;
+    background: transparent;
+    padding: 1%;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #F16725;
+    transition: all 0.3s ease-in-out;
+}
+
 .hero-section {
-    height: 650px;
+    height: 100vh;
     padding: 20px 70px 20px 70px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     background-color: #ffffe3;
 } 
+
+/* hero section image */
+.right-hero img {
+    width: 100%;
+    height: auto;
+}
 
 /* hero section styles start */
 .left-hero p {
@@ -124,7 +137,7 @@ nav .right-nav {
     /* height: 300px; */
     font-family: "Mulish", sans-serif;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 3.5em;
 }
 
 /* h1 span styles */
@@ -178,14 +191,8 @@ nav .right-nav {
 
 /* right-hero styles */
 
-.right-hero img {
-    width: 100%;
-    position: relative;
-    /* bottom: 100px; */
-    /* right: 70px; */
 
-   
-}
+
 /* hero section end */
 
 /* services section start */
@@ -363,6 +370,12 @@ nav .right-nav {
     
     align-content: center;
     justify-content: center;
+}
+
+/* hover effect */
+.biller-grid :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -751,37 +764,41 @@ footer {
     background-color: #FFFFE3;
 }
 
-
-@media screen and (max-width: 600px) {
-    nav {
-        backdrop-filter: none;
-    }
-
-    nav ul {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    nav ul, .right-nav {
         display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.7rem;
-        position: absolute;
-        height: 100vh;
-        width: 250px;
-        top: 0;
-        right: 0;
-        padding: 5rem 1.5rem;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 01.5);
-        backdrop-filter: blur(10px);
+
     }
 
     .hamburger {
         display: block;
-        z-index: 999;
     }
 
-    nav ul.active {
+    .hero-section {
         display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .left-hero p {
+        display: none;
+    }
+
+    .left-hero h1 {
+        width: 100%;
+        font-size: 20px;
     }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
 
-@media ()
-/* @media (min-width: 600px) and (max-width: 900px) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
