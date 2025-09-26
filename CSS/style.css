@@ -109,10 +109,11 @@ nav ul li a {
 }
 
 .hero-section {
-    height: 100vh;
-    padding: 20px 70px 20px 70px;
+    height: auto;
+    padding: 2% 7% 10% 7%;
     display: flex;
-    /* justify-content: space-between; */
+    gap: 10%;
+    justify-content: center;
     align-items: center;
     background-color: #ffffe3;
 } 
@@ -124,12 +125,12 @@ nav ul li a {
 }
 
 /* hero section styles start */
-.left-hero p {
+.left-hero > .p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #F16725;
+    color: #666;
 }
 
 .left-hero h1 {
@@ -140,16 +141,14 @@ nav ul li a {
     font-size: 3.5em;
 }
 
-/* h1 span styles */
 .left-hero h1 span {
-    font-family: "Mulish", sans-serif;
-    font-weight: 700;
-    font-size: 56px;
     color: #F16725;
 }
 
-.left-hero > .p  {
-    width: 493px;
+ 
+
+.left-hero p  {
+    width: 293px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -198,15 +197,17 @@ nav ul li a {
 /* services section start */
 .services {
     align-content: center;
-    padding: 120px 160px 160px 160px;
+    padding: 12% 16% 12% 16%;
 }
 
-.services h2 {
-    width: 585px;
+.service-container h2 {
+    width: 48%;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 60px;
+    text-align: left;
+    margin-left: 8%;
 }
 
 .million {
@@ -219,15 +220,16 @@ nav ul li a {
 /* service container styles */
 .service-container > .offers-container{
     display: flex;
-    gap: 30px;
-    padding-top: 50px;
+    justify-content: center;
+    gap: 3%;
+    padding-top: 5%;
 }
 
 /* offers headers styles */
 .offers h3 {
     font-family: Oxygen;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 50px;
     color: #F16725;
 }
@@ -264,24 +266,26 @@ nav ul li a {
 /* offers bg styles */
 .offers-container > .offers {
     width: 333px;
-    height: 304px;
+    height: auto;
     gap: 8px;
     border-radius: 30px;
-    padding: 32px;
+    padding: 3%;
     background-color: #FFFFE3;
+}
 
+.offers-container > .offers:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* why paga section starts */
 .why-paga-container {
-    height: 450px;
+    height: auto;
 }
 
 /* why paga text styles */
 .why-paga-container > .p-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     margin: 0 auto;
     width: 120px;
     height: 33px;
@@ -294,7 +298,7 @@ nav ul li a {
 .why-paga-container > .p-bg p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #FFFFFF;
 }
@@ -302,45 +306,42 @@ nav ul li a {
 .why-paga-container h2 {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 123%;
-    text-align: center; 
-    padding-top: 15px; 
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
 }
 
 .why-paga-container h2 .your-way {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    line-height: 24px;
     color: #F16725;
 }
 
 
 .why-paga-container > .reason {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 80px;
-    width: 1047px;
-    height: 290px;
-    gap: 3px;
-    
+    padding-top: 2%;
+    gap: 10%;
+    width: 50%;
+    height: auto;
 }
 
 .reason1 {    
-    width: 317px;
-    height: 290px;
-    gap: 8.03px;
+    width: 25%;
+    height: auto;
+    row-gap: 10px;
     border-radius: 8px;
-    padding: 24px;
+    margin: 0% 10% 0% 30%;
+    margin: 0 auto;
 }
 
 .reason1 h3 {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(1.5rem, 5vw, rem);
     line-height: 48px;
     color: #F16725;
     text-align: center;
@@ -367,31 +368,33 @@ nav ul li a {
 /* billers section start */
 .billers-section {
     background-color: #FFFFE3;
-    
+    margin: 0 auto;
     align-content: center;
-    justify-content: center;
 }
 
 /* hover effect */
 .biller-grid :hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 
 .biller {
     align-content: center;
-    justify-content: center;
-    padding: 120px 160px 20px 160px;
+    padding: 5% 16% 2% 16%;
+    margin: 0 auto;
     
 }
 
 .biller h2 {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
+    text-align: justify;
     line-height: 48px;
     padding-bottom: 0.4em;
+    padding-left: 10%;
 }
 
 .biller h2 span {
@@ -405,21 +408,21 @@ nav ul li a {
 .biller p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 5wh, 16px);
     line-height: 24px;
     color: #F16725;
+    padding-left: 10%;
     }
 
 /* biller grid styles */
 .biller-grid {
-    width: 900px;
+    width: 55%;
     display: grid;
-    justify-content: center;
-    align-self: center;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
+     align-content: center;
     gap: 20px;
-    padding-left: 34%; 
+    margin: 0 auto;
 }
 /* biller section ends */
 
@@ -542,36 +545,39 @@ nav ul li a {
 
 /* testimonies / swiper container */
 .testimonial-section {
-  width: 100%;
+  width: 70%;
   text-align: center;
-  padding: 40px;
+  padding: 4%;
+  margin: 0 auto;
 }
 
 .testimonial-section h2 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-style: Bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 60px;
+  padding-bottom: 3%;
 }
 
 .swiper-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5%;
 }
 
 .swiper-slide h3 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #1E1F38;
 }
 
 .testimonial-section p {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 40px;
   /* padding: 0px 30px; */
@@ -594,10 +600,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 254px;
-  margin: 0 auto;
-  /* padding: 40px; */
-  box-sizing: border-box;
+  width: 25%;
 }
 
 /* reviewers section end */
@@ -609,21 +612,25 @@ nav ul li a {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: #1E1F38;
-    width: 705px;
+    width: 40%;
+    margin-left: 15%;
 }
 
 .partners h2 span {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: #F16725;
 }
 
-.partner-grid img {
-    width: 100%;
+.partners > .partner-grid {
+    width: 72%;
+    height: auto;
+    margin: 0 auto;
+    /* align-items: center; */
 }
 
 .partners > .partners-heading {
@@ -649,7 +656,7 @@ nav ul li a {
 
 .download-app-left p {
     background-color: #FDB913;
-    width: 250px;
+    width: 40%;
     height: 30px;
     text-align: center;
     border-radius: 50px;
@@ -735,7 +742,7 @@ nav ul li a {
 .footer-items > .reach a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 24px;
     color: #1E1F38CC;
 }
@@ -750,14 +757,16 @@ nav ul li a {
 
 
 .footer-items > .reach address {
-    width: 223px;
+    width: 40%;
 }
 
 .end-footer {
+    width: 85%;
     height: 50px;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 180px 0px 80px;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+    gap: 70%;
 }
 
 footer {
@@ -781,24 +790,175 @@ footer {
         gap: 3em;
     }
 
-    .left-hero p {
+    .left-hero > .p {
         display: none;
     }
 
     .left-hero h1 {
-        width: 100%;
-        font-size: 20px;
+        width: 296px;
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0 auto;
+        gap: 16px;
     }
-}
 
+    /* left hero pargraph styles */
+    .left-hero p {
+        width: 350px;
+        padding-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-buttons > .CTA-2 {
+        background-color: transparent;
+    }
+
+    .hero-buttons > .CTA-2 a {
+        color: #FF5555;
+        text-align: center;
+    }
+
+    .service-container h2 {
+        width: 300px;
+        font-family: "Mulish", sans-serif;
+        font-size: 1.5rem;
+        text-align: left;
+        font-weight: 700;
+        line-height: 30px;
+        margin: 0 auto;
+        
+    }
+
+    .service-container > .offers-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .offers-container > .offers:hover {
+        transform:scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    /* whay Paga mobile view starts */
+    .reason {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .reason1 {
+        width: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /* Billler section starts */
+    .biller h2 {
+        font-family: "Mulish", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    .biller h2 span {
+        font-family: "Mulish", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #F16725;
+    }
+
+    .biller p {
+        font-family: "Poppins" sans-serif;
+        font-weight: 400;
+    }
+
+    .biller-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        width: 70%;
+  }
+
+  .biller-grid img {
+    width: 70px; /* Adjust image size for small screens */
+    height: auto;
+  }
+
+    /* agents section starts */
+  .agents-section > .agents-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        gap: 2em;
+    }
+
+    .agents > .need-an-agent {
+        margin: 0 auto;
+        margin-top: 20px;
+    }  
+    
+    .agents-container > .agents {
+        width: 73%;
+        height: auto;
+    }
+
+    .agents h2 {
+        font-family: "Mulish", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+
+    .agents > .p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 10px;
+        color: #FFFFFF 80%;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .button-container > .btn-left, .button-container > .btn-right {
+        width: 150px;
+        height: 40px;
+    }
+
+
+    .button-container > .btn-left a, .button-container > .btn-right a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .circular-grid > 
+
+    
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 600px){}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px){}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px){}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1200px){}
