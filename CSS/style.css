@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
-    /* background-color: #FFFFE3; */
+    
 }  
 
 /* variable color */
@@ -201,13 +201,12 @@ nav ul li a {
 }
 
 .service-container h2 {
-    width: 48%;
+    width: 581px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 3rem;
     line-height: 60px;
     text-align: left;
-    margin-left: 8%;
 }
 
 .million {
@@ -221,6 +220,7 @@ nav ul li a {
 .service-container > .offers-container{
     display: flex;
     justify-content: center;
+    width: 1095px;
     gap: 3%;
     padding-top: 5%;
 }
@@ -285,7 +285,6 @@ nav ul li a {
 
 /* why paga text styles */
 .why-paga-container > .p-bg {
-   
     margin: 0 auto;
     width: 120px;
     height: 33px;
@@ -320,17 +319,17 @@ nav ul li a {
 
 
 .why-paga-container > .reason {
+    width: 1047px;
     display: flex;
     align-items: center;
     margin: 0 auto;
     padding-top: 2%;
     gap: 10%;
-    width: 50%;
     height: auto;
 }
 
 .reason1 {    
-    width: 25%;
+    width: 317px;
     height: auto;
     row-gap: 10px;
     border-radius: 8px;
@@ -854,13 +853,12 @@ footer {
     } 
 
     .reason1 {
-        width: auto;
-        margin: 0 auto;
+        width: 317px;
         padding-bottom: 20px;
         padding-top: 20px;
     }
 
-    /* Billler section starts */
+    /* Biller section starts */
     .biller h2 {
         font-family: "Mulish", sans-serif;
         font-weight: 700;
